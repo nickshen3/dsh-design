@@ -28,8 +28,13 @@
 ## 状态
 
 - [x] 仓库初始化
-- [ ] 导入模板
-- [ ] 导入设计系统
-- [ ] 导入 Skills
-- [ ] 导入提示词模板
+- [x] 导入模板（首批 5 个）
+- [x] 导入设计系统（首批 5 个）
+- [x] 导入 Skills（首批 5 个）
+- [x] 导入提示词模板（image/video 各 5）
 - [ ] DSH 插件集成说明
+
+## 来源与许可
+
+- 模板、设计系统、Skills、提示词均来自 [nexu-io/open-design](https://github.com/nexu-io/open-design)（Apache-2.0）。
+- 上游许可证见 `licenses/OPEN-DESIGN-LICENSE.txt`。
