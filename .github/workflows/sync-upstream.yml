@@ -1,0 +1,21 @@
+name: Sync OpenDesign Materials
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure git
+        run: |
+          git config user.name "dsh-design-bot"
+          git config user.email "actions@users.noreply.github.com"
+      - name: Sync upstream OpenDesign materials
+        run: ./scripts/sync-upstream.sh main
